@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en" manifest="cache/xx-xxxrn-cache.manifest">
+	<head>
+		<meta content="text/html; charset=utf-8" http-equiv="content-type" >
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" >
+		<title>
+			Open Geospatial Consortium
+		</title>
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>  
+		<![endif]-->
+		<link rel="stylesheet" href="includes/css/spectemplate.css" type="text/css" >
+		<link rel="stylesheet" href="includes/css/styles/atelier-forest.light.css">
+		<script src="includes/js/highlight.pack.js"></script>
+		<script>hljs.initHighlightingOnLoad();</script>
+		<script src="includes/js/jquery.min.js"></script>
+		<script src="includes/js/gen_toc.js"></script>
+	</head>
+	<body >
+		<header id="header" itemscope itemtype="http://schema.org/CreativeWork" >
+			<p class="prefacehead">Open Geospatial Consortium</p>
+			<p>Submission Date: <time itemprop="dateModified" datetime="2014-01-01" class="editme" >yyyy-dd-mm</time></p>
+			<p>Approval Date: <time itemprop="datePublished" datetime="2014-01-01" class="editme">yyyy-dd-mm</time></p>
+			<p>Publication Date: <time itemprop="datePublished" datetime="2014-01-01" class="editme" >yyyy-dd-mm</time></p>
+			<p>External identifier of this OGC<sup>®</sup> document: <span itemprop="url" class="editme" >&lt;<a href="http://www.opengis.net/def/doc-type/standard/1.0" >http://www.opengis.net/def/doc-type/standard/1.0</a>&gt;</span></p>
+			<p>Internal reference number of this OGC<sup>®</sup> document: <span class="editme" >&lt;YY-nnnrx&gt;</span></p>
+			<p>Version: <span itemprop="version" class="editme" >&lt;n.n&gt;</span></p>
+			<p>Category: OGC<sup>®</sup> <span class="editme" >&lt;Implementation / Abstract Specification / Best Practice&gt;</span></p>
+			<p>Editor: <span class="editme"><span itemprop="editor">&lt;Name(s) of Editor</span>, <span itemprop="editor">Editors&gt;</span></span></p>
+			<p class="title" itemprop="name">OGC <span class="editme" >&lt;Document Title&gt;</span></p>
+			<p class="prefacehead" style="text-align:center; ">
+				<strong>Copyright notice</strong>
+			</p>
+			<p style="text-align:center; ">
+				Copyright © <span class="editme" itemprop="copyrightYear">&lt;year&gt;</span> <span itemprop="copyrightHolder">Open Geospatial Consortium</span><br>
+				To obtain additional rights of use, visit <a href="http://www.opengeospatial.org/legal/" >http://www.opengeospatial.org/legal/</a>.
+			</p>
+			<p class="prefacehead" style="text-align:center; " >
+				<strong>Warning</strong>
+			</p>
+			<div class="docwarning">
+				<p>
+					This document is not an OGC Standard. This document is distributed for review and comment. This document is subject to change without notice and may not be referred to as an OGC Standard.
+				</p>
+				<p>
+					Recipients of this document are invited to submit, with their comments, notification of any relevant patent rights of which they are aware and to provide supporting documentation.
+				</p>
+			</div>
+			<p>
+				<br>
+			</p>
+			<table>
+				<tbody>
+					<tr>
+						<td style="border-radius: 1em 0 0 0;">
+							Document type:
+						</td>
+						<td style="border-radius: 0 1em 0 0;">
+							OGC<sup>®</sup> <span class="editme" >&lt;Standard/Abstract Specification/Best Practice&gt;</span>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Document subtype:
+						</td>
+						<td>
+							if applicable
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Document stage:
+						</td>
+						<td>
+							Draft
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Document language:
+						</td>
+						<td>
+							English
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</header>
+		<p>
+			<br>
+		</p>
+		<p>
+			<br>
+		</p>
+		<div id="license">
+		<p class="prefacehead">License Agreement</p>
+		<p>
+			Permission is hereby granted by the Open Geospatial Consortium, (“Licensor”), free of charge and subject to the terms set forth below, to any person obtaining a copy of this Intellectual Property and any associated documentation, to deal in the Intellectual Property without restriction (except as set forth below), including without limitation the rights to implement, use, copy, modify, merge, publish, distribute, and/or sublicense copies of the Intellectual Property, and to permit persons to whom the Intellectual Property is furnished to do so, provided that all copyright notices on the intellectual property are retained intact and that each person to whom the Intellectual Property is furnished agrees to the terms of this Agreement.
+		</p>
+		<p>
+			If you modify the Intellectual Property, all copies of the modified Intellectual Property must include, in addition to the above copyright notice, a notice that the Intellectual Property includes modifications that have not been approved or adopted by LICENSOR.
+		</p>
+		<p>
+			THIS LICENSE IS A COPYRIGHT LICENSE ONLY, AND DOES NOT CONVEY ANY RIGHTS UNDER ANY PATENTS THAT MAY BE IN FORCE ANYWHERE IN THE WORLD.
+		</p>
+		<p>
+			THE INTELLECTUAL PROPERTY IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT OF THIRD PARTY RIGHTS. THE COPYRIGHT HOLDER OR HOLDERS INCLUDED IN THIS NOTICE DO NOT WARRANT THAT THE FUNCTIONS CONTAINED IN THE INTELLECTUAL PROPERTY WILL MEET YOUR REQUIREMENTS OR THAT THE OPERATION OF THE INTELLECTUAL PROPERTY WILL BE UNINTERRUPTED OR ERROR FREE. ANY USE OF THE INTELLECTUAL PROPERTY SHALL BE MADE ENTIRELY AT THE USER’S OWN RISK. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR ANY CONTRIBUTOR OF INTELLECTUAL PROPERTY RIGHTS TO THE INTELLECTUAL PROPERTY BE LIABLE FOR ANY CLAIM, OR ANY DIRECT, SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES, OR ANY DAMAGES WHATSOEVER RESULTING FROM ANY ALLEGED INFRINGEMENT OR ANY LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR UNDER ANY OTHER LEGAL THEORY, ARISING OUT OF OR IN CONNECTION WITH THE IMPLEMENTATION, USE, COMMERCIALIZATION OR PERFORMANCE OF THIS INTELLECTUAL PROPERTY.
+		</p>
+		<p>
+			This license is effective until terminated. You may terminate it at any time by destroying the Intellectual Property together with all copies in any form. The license will also terminate if you fail to comply with any term or condition of this Agreement. Except as provided in the following sentence, no such termination of this license shall require the termination of any third party end-user sublicense to the Intellectual Property which is in force as of the date of notice of such termination. In addition, should the Intellectual Property, or the operation of the Intellectual Property, infringe, or in LICENSOR’s sole opinion be likely to infringe, any patent, copyright, trademark or other right of a third party, you agree that LICENSOR, in its sole discretion, may terminate this license without any compensation or liability to you, your licensees or any other party. You agree upon termination of any kind to destroy or cause to be destroyed the Intellectual Property together with all copies in any form, whether held by you or by any third party.
+		</p>
+		<p>
+			Except as contained in this notice, the name of LICENSOR or of any other holder of a copyright in all or part of the Intellectual Property shall not be used in advertising or otherwise to promote the sale, use or other dealings in this Intellectual Property without prior written authorization of LICENSOR or such copyright holder. LICENSOR is and shall at all times be the sole entity that may authorize you or any third party to use certification marks, trademarks or other special designations to indicate compliance with any LICENSOR standards or specifications. This Agreement is governed by the laws of the Commonwealth of Massachusetts. The application to this Agreement of the United Nations Convention on Contracts for the International Sale of Goods is hereby expressly excluded. In the event any provision of this Agreement shall be deemed unenforceable, void or invalid, such provision shall be modified so as to make it valid and enforceable, and as so modified the entire Agreement shall remain in full force and effect. No decision, action or inaction by LICENSOR shall be construed to be a waiver of any rights or remedies available to it.
+		</p>
+		</div>
+		<p>
+			<br>
+		</p>
+	<main class="all-headings">
+		<p>
+			&nbsp;<br>
+		</p>
+		<section id="abstract" >
+			<header>
+				<p class="prefacehead">i. Abstract</p>
+			</header>
+			<p class="editme" >&lt;Insert Abstract Text here&gt;</p>
+		</section>
+		
+		<section id="keywords" >
+			<header>
+				<p class="prefacehead">ii. Keywords</p>
+			</header>
+			<p>
+				The following are keywords to be used by search engines and document catalogues.
+			</p>
+			<p>
+				ogcdoc, OGC document, &nbsp;<span class="editme" >&lt;tags separated by commas&gt;</span>
+			</p>
+		</section>
+		
+		<section id="preface" >
+			<header>
+				<p class="prefacehead">iii. Preface</p>
+			</header>
+			<p>
+				<span class="editmemore" >&lt;Insert Preface Text here. Give OGC specific commentary: describe the technical content, reason for document, history of the document and precursors, and plans for future work.&gt;</span>
+			</p>
+			<p>
+				Attention is drawn to the possibility that some of the elements of this document may be the subject of patent rights. The Open Geospatial Consortium shall not be held responsible for identifying any or all such patent rights.
+			</p>
+			<p>
+				<em>Recipients of this document are requested to submit, with their comments, notification of any relevant patent claims or other intellectual property rights of which they may be aware that might be infringed by any implementation of the standard set forth in this document, and to provide supporting documentation.</em>
+			</p>
+		</section>
+		
+		<section id="submittingorgs" itemscope itemtype="http://schema.org/Organization">
+			<header>
+				<p class="prefacehead">iv. Submitting organizations</p>
+			</header>
+			<p>
+				The following organizations submitted this Document to the Open Geospatial Consortium (OGC):
+			</p>
+				<dl>
+					<dt></dt>
+					<dd itemprop="name" ><span class="editme">&lt;Organization A&gt;</span></dd>
+					<dd itemprop="name" ><span class="editme">&lt;Organization B&gt;</span></dd>
+				</dl>
+				<p></p>
+		</section>
+		
+		<section id="submitters" itemscope itemtype="http://schema.org/Person">
+			<header>
+				<p class="prefacehead">v. Submitters</p>
+			</header>
+			<p>
+				All questions regarding this submission should be directed to the editor or the submitters:
+			</p>
+			<table class="small">
+				<tr class="odd" >
+					<th>
+						<strong>Name</strong>
+					</th>
+					<th>
+						<strong>Affiliation</strong>
+					</th>
+				</tr>
+				<tr class="even" >
+					<td style="text-align:left; " >
+						<p itemprop="name">
+							&nbsp;
+						</p>
+					</td>
+					<td style="text-align:left; " >
+						<p itemprop="affiliation">
+							&nbsp;
+						</p>
+					</td>
+				</tr>
+				<tr class="odd" >
+					<td style="text-align:left; " >
+						<p itemprop="name">
+							&nbsp;
+						</p>
+					</td>
+					<td style="text-align:left; " >
+						<p itemprop="affiliation">
+							&nbsp;
+						</p>
+					</td>
+				</tr>
+			</table>
+		</section>
+		
+		<section id="scope" >
+			<h1 id="Scope">Scope</h1>
+			<p>
+				<span class="editme" >&lt;Insert Scope text here. Give the subject of the document and the aspects of that scope covered by the document. &gt;</span>
+			</p>
+		</section>
+		<section id="conformance" >
+			<h1 id="Conformance">Conformance</h1>
+			<p>
+				This standard defines <span class="editme" >&lt;XXXX</span>.
+			</p>
+			<p>
+				<span class="editme" >Requirements for N standardization target types are considered:</span>
+			</p>
+			<ul>
+				<li>
+					<span class="editme" >AAAA</span>
+				</li>
+				<li>
+					<span class="editme" >BBBB&gt;</span>
+				</li>
+			</ul>
+			<p>
+				Conformance with this standard shall be checked using all the relevant tests specified in Annex A (normative) of this document. The framework, concepts, and methodology for testing, and the criteria to be achieved to claim conformance are specified in the OGC Compliance Testing Policies and Procedures and the <a href="http://cite.opengeospatial.org" >OGC Compliance Testing web site</a>.
+			</p>
+			<p>
+				In order to conform to this OGC<sup>®</sup> interface standard, a software implementation shall choose to implement:
+			</p>
+			<p>
+				a) Any one of the conformance levels specified in Annex B (normative).
+			</p>
+			<p>
+				b) Any one of the Distributed Computing Platform profiles specified in Annexes TBD through TBD (normative).
+			</p>
+			<p>
+				All requirements-classes and conformance-classes described in this document are owned by the standard(s) identified.
+			</p>
+		</section>
+		<section id="references" >
+			<h1 id="References">References</h1>
+			<p>
+				The following normative documents contain provisions that, through reference in this text, constitute provisions of this document. For dated references, subsequent amendments to, or revisions of, any of these publications do not apply. For undated references, the latest edition of the normative document referred to applies.
+			</p>
+			<p>
+				<span class="editme" >&lt;Insert References here. If there are no references, state “There are no normative references”.&gt;</span>
+			</p>
+		</section>
+		<section id="terms" >
+			<h1 id="Terms">Terms and Definitions</h1>
+			<p>
+				This document uses the terms defined in Sub-clause 5.3 of [OGC 06-121r8], which is based on the ISO/IEC Directives, Part 2, Rules for the structure and drafting of International Standards. In particular, the word “shall” (not “must”) is the verb form used to indicate a requirement to be strictly followed to conform to this standard.
+			</p>
+			<p>
+				For the purposes of this document, the following additional terms and definitions apply.
+			</p>	
+				<dl class="term">
+					<!-- remove editme class tags -->
+					<dt class="term"><dfn class="editme" >&lt;term name</dfn></dt>
+						<dd class="term editme" >text of the definition</dd>
+					<dt class="term"><dfn class="editme" >secont term</dfn></dt>
+						<dd class="term editme" >text of the definition&gt;</dd>
+				</dl>
+				<p></p>
+			<footer>
+			</footer> 
+		</section>
+		<section id="conventions">
+			<h1 id="Conventions">Conventions</h1>
+			<p>
+				This sections provides details and examples for any conventions used in the document. Examples of conventions are symbols, abbreviations, use of XML schema, or special notes regarding how to read the document.
+			</p>
+		</section>
+	<main>	
+		<section id="nonnormative" >
+			<h1 id="Nonnormative">Clauses not Containing Normative Material</h1>
+			<p>
+				Paragraph
+			</p>
+			
+			<h2>Clauses not containing normative material sub-clause 1</h2>
+			<p>
+				<span class="editme">&lt;Example Paragraph.&gt; </span>
+			</p>
+			<p>
+				<span class="editme">&lt;Example for inclusion of an Image or Figure (please number sequentially):</span>
+			</p>	
+				<figure id="#figure_1">
+				  <img id="figure_1" src="includes/images/membership.png" alt="Membership" >
+					  <figcaption style="clear: left;margin: .75em 0;text-align: center;font-style: italic;line-height: 1.5em;">
+						Figure 1: <span class="editme">This is OGC Yearly Membership<br>* incomplete year&gt;</span></figcaption>
+				</figure>
+				<p></p>
+			
+			<h3>Clauses not containing normative material sub-clause 2A</h3>
+			<p class="warning">This is a warning.</p>
+			<p class="notice">This is a note.</p>
+			<h3>Clauses not containing normative material sub-clause 2B</h3>
+				<h4>Clauses not containing normative material sub-clause 2BI</h4>
+				<h4>Clauses not containing normative material sub-clause 2BII</h4>
+					<h5>Clauses not containing normative material sub-clause 2BIIa</h5>
+						<h6>Clauses not containing normative material sub-clause 2BIIai</h6>
+			<h2>Clauses not containing normative material sub-clause 1b</h2>
+		</section>
+		
+		<section id="normative" >
+			<h1 id="normative">Clause containing normative material</h1>
+			<p>
+				Paragraph
+			</p>
+			<h2>Requirement Class A or Requirement A Example</h2>
+			<p>
+				<span class="editme" >Paragraph – intro text. The following table is an example only. Modify as necessary.</span>
+			</p>
+			<table class="requirementclasstable" >
+				<tbody>
+				<tr>
+					<th colspan="2" >Requirements Class</th>
+				</tr>
+				<tr>
+					<td colspan="2" >
+						<span class="editme" ><strong>http://www.opengis.net/spec/ABCD/m.n/req/req-class-a</strong></span>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Target type
+					</td>
+					<td>
+						Token
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Dependency
+					</td>
+					<td>
+						http://www.example.org/req/blah
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Dependency
+					</td>
+					<td>
+						urn:iso:ts:iso:19139:clause:6
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<strong>Requirement</strong>
+					</td>
+					<td>
+						<span class="editme" >http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-1<br>
+						<br>
+						<em>requirement description</em></span>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<strong>Requirement</strong>
+					</td>
+					<td>
+						<span class="editme" >http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-2<br>
+						<br>
+						<em>requirement description</em></span>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<strong>Requirement</strong>
+					</td>
+					<td>
+						<span class="editme" >http://www.opengis.net/spec/ABCD/m.n/req/req-class-a/req-name-3<br>
+						<br>
+						<em>requirement description</em></span>
+					</td>
+				</tr>
+			</tbody></table>
+			
+			<h2>Requirement Class B or Requirement B Example</h2>
+			<p>
+				<span class="editme" >Paragraph – intro text. The following table is an example only. Modify as necessary</span>.
+			</p>
+			<div class="requirement" >
+				<div class="requirementlabel" >
+					Req <span class="editme" >1</span>
+				</div>
+				<div class="requirementtext" >
+					<span class="editme" >&lt;Example – remove from document&gt; When a WCS server encounters an error while performing a GetCapabilitiesoperation, the server shall return an exception report message as specified in Clause 8 of [OGC 06-121r8].</span>
+				</div>
+				<div class="requirementuri" >
+					<a href="http://opengis.net/spec/WCS/2.0/core/exception" >http://opengis.net/spec/WCS/2.0/core/exception</a>
+				</div>
+			</div>
+			<h2>Dictionary table example</h2>
+			<p>
+				<span class="editme" >Paragraph – intro text. The following table is an example only. Modify as necessary.</span>
+			</p>
+			<table>
+				<tbody>
+				<tr>
+					<th>
+						Names
+					</th>
+					<th>
+						Definition
+					</th>
+					<th>
+						Data type and values
+					</th>
+					<th>
+						Multiplicity and use
+					</th>
+				</tr>
+				<tr>
+					<td>
+						mime<br>
+						MIME
+					</td>
+					<td>
+						A supported output format for the operation response
+					</td>
+					<td>
+						ows:MimeType
+					</td>
+					<td>
+						One (mandatory)
+					</td>
+				</tr>
+				<tr>
+					<td>
+						fileExtension<br>
+						FileExtension
+					</td>
+					<td>
+						File extension compatible with output format without the initial dot
+					</td>
+					<td>
+						Character String type, not empty
+					</td>
+					<td>
+						Zero or one (optional)<br>
+						Include when RESTful resource oriented architecture style is allowed
+					</td>
+				</tr>
+			</tbody></table>
+		</section>
+		<section id="mediatypes" >
+			<h1 id="Mediatypes">Media Types for any data encoding(s)</h1>
+			<p>
+				A section describing the MIME-types to be used is mandatory for any standard involving data encodings. If no suitable MIME type exists in <a href="http://www.iana.org/assignments/media-types/index.html" >http://www.iana.org/assignments/media-types/index.html</a> then this section may be used to define a new MIME type for registration with IANA.
+			</p>
+		</section>
+		<section id="annexconformanceats" >
+			<h1 id="Annexconformanceats" class="annextitle">Annex A: Conformance Class Abstract Test Suite (Normative)</h1>
+			<h2>
+				A.1 Conformance class: AAAA <span class="editme" >(repeat as necessary)</span>
+			</h2>
+		</section>
+	</main>	
+		<section id="revisionhistory" >
+			<h1 id="Revisionhistory" class="annextitle">
+				Annex B: Revision history
+			</h1>
+			<p>
+				&nbsp;
+			</p>
+			<table>
+				<tbody>
+					<tr class="odd" >
+						<th>Date</th>
+						<th>Release</th>
+						<th>Author</th>
+						<th>Paragraph modified</th>
+						<th>Description</th>
+					</tr>
+					<tr class="even" >
+						<td style="text-align:left; " >
+							<p>
+								&nbsp;
+							</p>
+						</td>
+						<td style="text-align:left; " >
+							<p>
+								&nbsp;
+							</p>
+						</td>
+						<td style="text-align:left; " >
+							<p>
+								&nbsp;
+							</p>
+						</td>
+						<td style="text-align:left; " >
+							<p>
+								&nbsp;
+							</p>
+						</td>
+						<td style="text-align:left; " >
+							<p>
+								&nbsp;
+							</p>
+						</td>
+					</tr>
+					<tr class="odd" >
+						<td style="text-align:left; " >
+							<p>
+								&nbsp;
+							</p>
+						</td>
+						<td style="text-align:left; " >
+							<p>
+								&nbsp;
+							</p>
+						</td>
+						<td style="text-align:left; " >
+							<p>
+								&nbsp;
+							</p>
+						</td>
+						<td style="text-align:left; " >
+							<p>
+								&nbsp;
+							</p>
+						</td>
+						<td style="text-align:left; " >
+							<p>
+								&nbsp;
+							</p>
+						</td>
+					</tr>
+					<tr class="even" >
+						<td style="text-align:left; " >
+							<p>
+								&nbsp;
+							</p>
+						</td>
+						<td style="text-align:left; " >
+							<p>
+								&nbsp;
+							</p>
+						</td>
+						<td style="text-align:left; " >
+							<p>
+								&nbsp;
+							</p>
+						</td>
+						<td style="text-align:left; " >
+							<p>
+								&nbsp;
+							</p>
+						</td>
+						<td style="text-align:left; " >
+							<p>
+								&nbsp;
+							</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<p>
+				&nbsp;
+			</p>
+		</section>
+		<section id="annex" >
+			<header>
+				<h1 id="AnnexC">
+					Annex <span class="editme" >&lt;insert annex number&gt;</span>: Schema or Code Examples 
+				</h1>
+			</header>
+				<p></p>
+				<pre>
+					<code>
+&lt;?xml version="1.0" encoding="UTF-8"  standalone = "yes"?&gt;
+	&lt;!DOCTYPE contacts [
+		&lt;!ELEMENT contacts ANY&gt;
+		&lt;!ELEMENT contact ANY&gt;
+		&lt;!ELEMENT user_id (#PCDATA)&gt;
+		&lt;!ELEMENT FirstName (#PCDATA)&gt;
+		&lt;!ELEMENT LastName (#PCDATA)&gt;
+		&lt;!ELEMENT Organization (#PCDATA)&gt; 
+		&lt;!ELEMENT Email (#PCDATA)&gt;
+		&lt;!ELEMENT Phone (#PCDATA)&gt;]&gt;
+		&lt;contacts&gt;
+			&lt;contact&gt;
+				&lt;user_id&gt;11145&lt;/user_id&gt;
+				&lt;FirstName&gt;Terry&lt;/FirstName&gt;
+				&lt;LastName&gt;Tester&lt;/LastName&gt;
+				&lt;Organization&gt;OGC&lt;/Organization&gt;
+				&lt;Email&gt;ttester@example.com&lt;/Email&gt;
+				&lt;Phone&gt;&lt;/Phone&gt;
+			&lt;/contact&gt;
+		&lt;/contacts&gt;
+					</code>
+				</pre>
+				<p></p>
+				<pre>
+					<code>
+&lt;?php
+	require_once('include.php');
+	echo "Hello World";
+?&gt;						
+					</code>
+				</pre>
+				<p></p>
+			<footer>
+			</footer>
+		</section>
+		<section id="bibliography" >
+			<header>
+				<h1 id="Bibliography">
+					Annex <span class="editme" >&lt;insert annex number&gt;</span>: Bibliography
+				</h1>
+			</header>
+			<p>
+				<span class="editme" >&lt;A Bibliography, if present, shall appear as the last annex. &gt;</span>
+			</p>
+			<footer>
+			</footer>
+		</section>
+	  </main>
+	</body>
+</html>
